@@ -5,12 +5,9 @@
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[6 Claude Code Slash]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    TripPlanCommand --> TripResearcherAgent
+    TripPlanCommand --> TripBriefSkill
 ```
 
 
