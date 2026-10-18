@@ -2,6 +2,18 @@
 
 > Claude Code example: a slash command orchestrates a research subagent and a formatting skill to produce a travel trip brief.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[6 Claude Code Slash]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 **Tags:** `claude-code` `anthropic` `claude` `ai-agents` `subagents` `slash-commands` `agentic-workflows` `llm` `automation` `prompt-engineering`
 
 The whole thing runs **in the Claude Code app**, driven by **slash syntax**.
